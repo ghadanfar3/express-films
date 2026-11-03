@@ -15,7 +15,11 @@ const actorSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-});
+},
+{
+    timestamps: true,
+    }
+);
 
 const Actor = mongoose.model("Actor", actorSchema);
 
